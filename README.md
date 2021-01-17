@@ -17,6 +17,8 @@ GOE_IP=your-go-e-charger-local-ip
 
 ## Cloud API or local API: It is your choice
 
+See [official go-e documentation](https://github.com/goecharger/go-eCharger-API-v1/blob/master/go-eCharger%20API%20v1%20EN.md)
+
 Using go-e Cloud API
 - Limited to ~25000 requests per year (which is ~ every 30s)
 - No local computer required. Telegraf can run from everywhere.
