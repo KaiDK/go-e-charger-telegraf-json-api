@@ -18,7 +18,7 @@ Using go-e Cloud API
 - Limited to ~25000 requests per year (which is ~ every 30s)
 - No local computer required. Telegraf can run from everywhere.
 - Definition of environment variable GOE_TOKEN required (GOE_IP not required)
-- telegraf.cloud.conf
+- see configuration file: telegraf.cloud.conf
 
 Using go-eCharger local API
 - Update every 5s possible
