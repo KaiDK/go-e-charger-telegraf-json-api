@@ -7,9 +7,12 @@ Set Telegraf environment variables in /etc/default/telegraf
 (this environment variables will be exported by the systemctl daemon via telegraf.service)
 
 ```
-INFLUX_TOKEN=your-influx-cloud-token-here
-GOE_TOKEN=your-go-e-charger-cloud-token-here
-GOE_IP=your-go-e-charger-local-ip-here
+INFLUX_URL=your-influx-cloud-url
+INFLUX_TOKEN=your-influx-cloud-token
+INFLUX_ORGA=your-orga (Email adress)
+INFLUX_BUCKET=your-influx-bucket
+GOE_TOKEN=your-go-e-charger-cloud-token
+GOE_IP=your-go-e-charger-local-ip
 ```
 
 ## Cloud API or local API: It is your choice
@@ -43,8 +46,12 @@ Do not forget to reload the systemctl daemon after modifying this files: `sudo s
 
 For commandline debug purpose you can do
 ```bash
-export INFLUX_TOKEN=your-influx-cloud-token-here
-export GOE_TOKEN=your-go-e-charger-cloud-token-here
-export GOE_IP=your-go-e-charger-local-ip-here
+export INFLUX_URL=your-influx-cloud-url
+export INFLUX_TOKEN=your-influx-cloud-token
+export INFLUX_ORGA=your-orga (Email adress)
+export INFLUX_BUCKET=your-influx-bucket
+export GOE_TOKEN=your-go-e-charger-cloud-token
+export GOE_IP=your-go-e-charger-local-ip
+
 telegraf --config https://eu-central-1-1.aws.cloud2.influxdata.com/api/v2/telegrafs/abcdefghi --test
 ```
